@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+int Calculation(int a, int b)
+{
+	if(a > b)
+	return a - b;
+	else
+	return b - a;
+}
+
 int main()
 {
 	
@@ -11,6 +19,8 @@ int main()
 		c = a - b;
 	else
 		c = b - a;
+	
+	Calculation(a, b);
 	
 	printf("Result: %d\n", c);
 	
